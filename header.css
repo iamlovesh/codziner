@@ -11,10 +11,8 @@
 	left: 0;
 	height: 100%;
 	width: 100%;
-	background: linear-gradient(-135deg, #e5e5e5, #29a7dd);
-	/* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
-	/* clip-path: circle(25px at calc(0% + 45px) 45px); */
-	clip-path: circle(25px at calc(100% - 45px) 45px);
+	background: linear-gradient(-135deg, #ffffff, #29a7dd);
+	clip-path: circle(0px at calc(100% - 45px) 45px);
 	transition: all 0.3s ease-in-out;
 }
 #active:checked ~ .wrapper {
@@ -23,9 +21,8 @@
 .menu-btn {
 	position: absolute;
 	z-index: 2;
-	right: 20px;
-	/* left: 20px; */
-	top: 20px;
+	right: 30px;
+	top: 30px;
 	height: 50px;
 	width: 50px;
 	text-align: center;
@@ -34,13 +31,9 @@
 	font-size: 20px;
 	color: #212121;
 	cursor: pointer;
-	background: #fff;
-	/* background: linear-gradient(-135deg, #c850c0, #4158d0); */
-	/* background: linear-gradient(375deg, #1cc7d0, #2ede98); */
 	transition: all 0.3s ease-in-out;
 }
 #active:checked ~ .menu-btn {
-	background: #fff;
 	color: #212121;
 }
 #active:checked ~ .menu-btn i:before {
@@ -60,10 +53,10 @@
 .wrapper ul li a {
 	color: none;
 	text-decoration: none;
-	font-size: 30px;
+	font-size: 25px;
 	font-weight: 500;
 	padding: 5px 30px;
-	color: #fff;
+	color: #212121;
 	position: relative;
 	line-height: 50px;
 	transition: all 0.3s ease;
@@ -84,26 +77,43 @@
 	transform: scaleY(1);
 }
 .wrapper ul li a:hover {
-	color: #4158d0;
+	color: #29a7dd;
 }
 input[type='checkbox'] {
 	display: none;
 }
-.content {
-	position: absolute;
-	top: 50%;
-	left: 50%;
-	transform: translate(-50%, -50%);
-	z-index: -1;
-	text-align: center;
-	width: 100%;
-	color: #202020;
+.custom_width {
+	width: 95%;
 }
-.content .title {
-	font-size: 40px;
-	font-weight: 700;
+@media screen and (max-width: 768px) {
+	.custom_width {
+		width: 80%;
+	}
+	.wrapper ul li a {
+		font-size: 20px;
+		padding: 5px 10px;
+		line-height: 45px;
+	}
+	.wrapper ul li {
+		margin: 5px 0;
+	}
+	ul {
+		padding-left: 0;
+	}
 }
-.content p {
-	font-size: 35px;
-	font-weight: 600;
+@media screen and (min-width: 769px) and (max-width: 1200px) {
+	.custom_width {
+		width: 90%;
+	}
+	.wrapper ul li a {
+		font-size: 20px;
+		padding: 5px 10px;
+		line-height: 45px;
+	}
+	.wrapper ul li {
+		margin: 5px 0;
+	}
+	ul {
+		padding-left: 0;
+	}
 }

@@ -16,19 +16,16 @@
 	</head>
 	<body>
 		<div class="container-fluid">
-			<div class="row m-4">
-				<div class="col-md-10 col-sm-8">
+			<div class="mx-3 my-4 d-flex justify-content-between custom_width">
+				<div>
 					<a
 						class="text-capitalize text-decoration-none text-dark fw-bold fs-3"
 						href="#"
 						>Codziner.</a
 					>
 				</div>
-				<div class="col-md-2 col-sm-4">
-					<button
-						class="btn btn-outline-primary text-uppercase p-1"
-						style="color: #29a7dd"
-					>
+				<div>
+					<button class="btn btn-outline-primary text-uppercase p-1 rounded-0">
 						QUOTE NOW
 					</button>
 					<span
@@ -38,22 +35,21 @@
 							border: 1px solid #e0e0e0;
 							transform: rotate(90deg);
 						"
-						class="mx-4 py-1"
+						class="mx-3 py-1"
 					></span>
 				</div>
-				<!-- <div class="col-1"> -->
-				<input type="checkbox" id="active" />
-				<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
-				<div class="wrapper">
-					<ul>
-						<li><a href="#">Home</a></li>
-						<li><a href="#">About</a></li>
-						<li><a href="#">Services</a></li>
-						<li><a href="#">Gallery</a></li>
-						<li><a href="#">Feedback</a></li>
-					</ul>
-				</div>
-				<!-- </div> -->
+			</div>
+			<input type="checkbox" id="active" />
+			<label for="active" class="menu-btn"><i class="fas fa-bars"></i></label>
+			<div class="wrapper">
+				<ul>
+					<li><a href="#">Home</a></li>
+					<li><a href="#">Our Products</a></li>
+					<li><a href="#">About us</a></li>
+					<li><a href="#">Recent projects</a></li>
+					<li><a href="#">How it works</a></li>
+					<li><a href="#">Contact us</a></li>
+				</ul>
 			</div>
 		</div>
 	</body>
