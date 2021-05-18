@@ -6,9 +6,69 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Codziner</title>
 		<script src="header.js"></script>
+		<style>
+			p {
+				font-family: 'Open Sans', sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				color: #212121;
+				letter-spacing: -0.02em;
+			}
+			.p1 {
+				font-size: 25px;
+				line-height: 30px;
+			}
+			.p2 {
+				font-size: 96px;
+				line-height: 117px;
+			}
+			@media screen and (max-width: 768px) {
+				.p1 {
+					font-size: 15px;
+					line-height: 20px;
+				}
+				.p2 {
+					font-size: 35px;
+					line-height: 45px;
+				}
+			}
+			@media screen and (min-width: 769px) and (max-width: 1200px) {
+				.p1 {
+					font-size: 20px !important;
+					line-height: 25px !important;
+				}
+				.p2 {
+					font-size: 65px !important;
+					line-height: 80px !important;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<div include-html="header.html"></div>
+		<div class="container-fluid">
+			<div class="row m-3 py-4">
+				<div class="col-sm-7">
+					<p class="p1">
+						We are <span style="color: #29a7dd">Codziner</span>, a <br />
+						digital agency based in <br />
+						the cloud
+					</p>
+					<br /><br />
+					<p class="p2">
+						&nbsp;<span style="color: #29a7dd">Idea</span> driven <br />
+						&nbsp;&nbsp;&nbsp;&nbsp;developement
+					</p>
+				</div>
+				<div class="col-sm-5">
+					<img
+						src="/image/Illustration.png"
+						alt="Illustration"
+						class="img-fluid"
+					/>
+				</div>
+			</div>
+		</div>
 	</body>
 	<script>
 		includeHTML();
