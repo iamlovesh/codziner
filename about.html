@@ -6,10 +6,151 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Codziner</title>
 		<script src="header.js"></script>
+		<style>
+			.all_set {
+				font-family: 'Open Sans', sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				color: #212121;
+				letter-spacing: -0.02em;
+			}
+			.about_us {
+				font-size: 80px;
+				line-height: 95px;
+			}
+			.about_span {
+				font-size: 95px;
+				line-height: 115px;
+				color: #29a7dd;
+			}
+			.about_content {
+				font-size: 32px;
+				line-height: 48px;
+				max-width: 75%;
+			}
+			.card-text {
+				font-weight: normal;
+				font-size: 22px;
+				line-height: 32px;
+			}
+			.card-title {
+				font-size: 28px;
+				line-height: 34px;
+				color: #000000;
+				text-decoration: none;
+			}
+			.box {
+				border: 1px solid #e0e0e0;
+				box-sizing: border-box;
+				margin: 40px 40px -40px 40px;
+			}
+			.img-fluid {
+				margin: -40px -40px 40px 40px;
+			}
+			@media screen and (max-width: 768px) {
+				.about_us {
+					font-size: 40px;
+					line-height: 55px;
+				}
+				.about_span {
+					font-size: 45px;
+					line-height: 70px;
+				}
+				.about_content {
+					font-size: 20px;
+					line-height: 30px;
+					max-width: 100%;
+				}
+				.card-text {
+					font-size: 16px;
+					line-height: 23px;
+				}
+				.card-title {
+					font-size: 28px;
+					line-height: 34px;
+				}
+				.box {
+					margin: 10px 10px -10px 10px;
+				}
+				.img-fluid {
+					margin: -10px -10px 10px 10px;
+				}
+			}
+			@media screen and (min-width: 769px) and (max-width: 1200px) {
+				.about_us {
+					font-size: 60px;
+					line-height: 75px;
+				}
+				.about_span {
+					font-size: 65px;
+					line-height: 80px;
+				}
+				.about_content {
+					font-size: 28px;
+					line-height: 44px;
+				}
+				.card-text {
+					font-size: 19px;
+					line-height: 27px;
+				}
+				.card-title {
+					font-size: 24px;
+					line-height: 30x;
+				}
+				.box {
+					margin: 20px 20px -20px 20px;
+				}
+				.img-fluid {
+					margin: -20px -20px 20px 20px;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<div include-html="header.html"></div>
-		about
+		<div class="container_fluid">
+			<div class="mx-4 mx-md-5 py-4">
+				<p class="all_set about_us">
+					About us &nbsp;&nbsp; <span class="about_span">//</span>
+				</p>
+				<hr style="color: #e0e0e0; height: 1px" class="my-md-5" />
+				<p class="all_set about_content">
+					Codziner is a highly-qualified team of individuals. Every project is a
+					challenge for us to do better and a chance to create something
+					amazing!
+				</p>
+				<div class="card all_set border-0 py-4" style="z-index: -1">
+					<div class="row">
+						<div class="col-sm-7 text-end">
+							<div class="box">
+								<img src="./image/About.png" alt="About" class="img-fluid" />
+							</div>
+						</div>
+						<div class="col-sm-5">
+							<div class="card-body">
+								<p class="card-text">
+									Time is accelerating. Marketing trends and business traditions
+									are quickly becoming out dated, forcing companies to adapt
+									themselves to the new reality of the future. Codziner mission
+									is to empower brands and companies with a digital presence
+									that is powerful, modern and ready to face whatever challenge
+									tomorrow may bring.
+								</p>
+								<br /><br />
+								<a class="card-title">
+									EXPLORE MORE &nbsp;&nbsp;
+									<i class="fas fa-chevron-right fs-6"></i>
+								</a>
+								<hr
+									class="my-3"
+									style="height: 2px; color: #212121; width: 260px"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</body>
 	<script>
 		includeHTML();
