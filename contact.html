@@ -11,10 +11,136 @@
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
 		<title>Codziner</title>
 		<script src="header.js"></script>
+		<style>
+			.all_set {
+				font-family: 'Open Sans', sans-serif;
+				font-style: normal;
+				font-weight: bold;
+				color: #000000;
+				letter-spacing: -0.02em;
+			}
+			.about_us {
+				font-size: 80px;
+				line-height: 95px;
+			}
+			.contact_us {
+				font-size: 72px;
+				line-height: 86px;
+				color: #29a7dd;
+			}
+			.about_span {
+				font-size: 300px;
+				line-height: 360px;
+			}
+			.about_content_heading {
+				font-size: 25px;
+				line-height: 30px;
+			}
+			.about_content {
+				font-size: 20px;
+				line-height: 24px;
+				font-weight: normal;
+			}
+			@media screen and (max-width: 768px) {
+				.about_us {
+					font-size: 40px;
+					line-height: 55px;
+				}
+				.contact_us {
+					font-size: 35px;
+					line-height: 50px;
+				}
+				.about_span {
+					font-size: 180px;
+					line-height: 220px;
+				}
+				.about_content_heading {
+					font-size: 20px;
+					line-height: 22px;
+				}
+				.about_content {
+					font-size: 16px;
+					line-height: 20px;
+				}
+			}
+			@media screen and (min-width: 769px) and (max-width: 1200px) {
+				.about_us {
+					font-size: 60px;
+					line-height: 75px;
+				}
+				.contact_us {
+					font-size: 55px;
+					line-height: 70px;
+				}
+				.about_span {
+					font-size: 300px;
+					line-height: 360px;
+				}
+				.about_content_heading {
+					font-size: 22px;
+					line-height: 25px;
+				}
+				.about_content {
+					font-size: 18px;
+					line-height: 22px;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<div include-html="header.html"></div>
-		contact
+		<div class="container-fluid">
+			<div class="mx-4 mx-md-5 py-4">
+				<p class="all_set about_us text-center">
+					Let’s build something <br />
+					<span style="color: #29a7dd">magical</span> together
+				</p>
+				<div
+					class="text-center all_set d-flex justify-content-center my-5 py-5"
+				>
+					<p class="about_span">{</p>
+					<p class="my-md-5 p-md-5 p-3">
+						<span class="contact_us">Contact us </span><br />
+						<span class="about_content_heading">Talk to you soon!</span>
+					</p>
+					<p class="about_span">}</p>
+				</div>
+			</div>
+			<div class="row all_set">
+				<div class="card col-sm-7 border-start-0 p-md-5 p-3">
+					<p class="about_content_heading">WE’RE READY, LET’S DO THIS</p>
+					<p class="about_content w-75">
+						Keen to chat about an opportunity or interested in working with us
+						on something right away? <br />
+						Let’s grab a coffee.
+					</p>
+				</div>
+				<div class="card col-sm-5 border-end-0 p-md-5 p-3">
+					<p class="about_content_heading">CONTACTS</p>
+					<p class="about_content" style="font-weight: 600">
+						Got a projects? <br />
+						<span class="about_content">contact@codziner.com</span>
+					</p>
+					<p class="about_content" style="font-weight: 600">
+						Career Opportunities <br />
+						<span class="about_content">career@codziner.com</span>
+					</p>
+				</div>
+			</div>
+			<div class="row p-md-5 p-2">
+				<div class="col-sm-6 fs-1">
+					<i class="fab fa-facebook-square" style="color: #4267b2"></i>
+					<i class="fab fa-twitter-square" style="color: #50abf1"></i>
+					<i class="fab fa-linkedin" style="color: #0077b7"></i>
+				</div>
+				<div
+					class="col-sm-6 text-md-end text-center all_set"
+					style="font-weight: normal; font-size: 16px; line-height: 135%"
+				>
+					&copy; 2019-2020 All Rights Reserved.
+				</div>
+			</div>
+		</div>
 	</body>
 	<script>
 		includeHTML();
